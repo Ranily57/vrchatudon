@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
+  m_Name: GameObject Udon Graph Program Asset
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: e2d5a6e7c4b906949a3aaff82a26eea2,
+    type: 2}
+  udonAssembly: ".data_start\r\n\r\n    \r\n    __instance_0: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __far_0: %SystemSingle, null\r\n    onPlayerTriggerEnterPlayer: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __instance_1: %VRCSDKBaseVRCPlayerApi, null\r\n    __near_0: %SystemSingle,
+    null\r\n    __instance_2: %VRCSDKBaseVRCPlayerApi, null\r\n    __gain_0: %SystemSingle,
+    null\r\n    __instance_3: %VRCSDKBaseVRCPlayerApi, null\r\n    __far_1: %SystemSingle,
+    null\r\n    onPlayerTriggerExitPlayer: %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_4:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __near_1: %SystemSingle, null\r\n    __instance_5:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __gain_1: %SystemSingle, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export _onPlayerTriggerEnter\r\n    \r\n    _onPlayerTriggerEnter:\r\n    \r\n       
+    PUSH, onPlayerTriggerEnterPlayer\r\n        PUSH, __instance_0\r\n        COPY\r\n       
+    PUSH, __instance_0\r\n        PUSH, __far_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetVoiceDistanceFar__SystemSingle__SystemVoid\"\r\n       
+    PUSH, onPlayerTriggerEnterPlayer\r\n        PUSH, __instance_1\r\n        COPY\r\n       
+    PUSH, __instance_1\r\n        PUSH, __near_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetVoiceDistanceNear__SystemSingle__SystemVoid\"\r\n       
+    PUSH, onPlayerTriggerEnterPlayer\r\n        PUSH, __instance_2\r\n        COPY\r\n       
+    PUSH, __instance_2\r\n        PUSH, __gain_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetVoiceGain__SystemSingle__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onPlayerTriggerExit\r\n    \r\n    _onPlayerTriggerExit:\r\n   
+    \r\n        PUSH, onPlayerTriggerExitPlayer\r\n        PUSH, __instance_3\r\n       
+    COPY\r\n        PUSH, __instance_3\r\n        PUSH, __far_1\r\n        EXTERN,
+    \"VRCSDKBaseVRCPlayerApi.__SetVoiceDistanceFar__SystemSingle__SystemVoid\"\r\n       
+    PUSH, onPlayerTriggerExitPlayer\r\n        PUSH, __instance_4\r\n        COPY\r\n       
+    PUSH, __instance_4\r\n        PUSH, __near_1\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetVoiceDistanceNear__SystemSingle__SystemVoid\"\r\n       
+    PUSH, onPlayerTriggerExitPlayer\r\n        PUSH, __instance_5\r\n        COPY\r\n       
+    PUSH, __instance_5\r\n        PUSH, __gain_1\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetVoiceGain__SystemSingle__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+  assemblyError: 
+  graphData:
+    name: 
+    description: 
+    nodes:
+    - fullName: Event_OnPlayerTriggerEnter
+      uid: 8d5855ce-7d57-4321-bf1c-89de0ec21cf5
+      position: {x: 188.84, y: 247.99998}
+      nodeUIDs: []
+      flowUIDs:
+      - a3a61cb5-e78c-4aa9-91bc-e71fbbc971fe
+      nodeValues: []
+    - fullName: VRCSDKBaseVRCPlayerApi.__SetVoiceDistanceFar__SystemSingle__SystemVoid
+      uid: a3a61cb5-e78c-4aa9-91bc-e71fbbc971fe
+      position: {x: 620.5825, y: 179.04175}
+      nodeUIDs:
+      - 8d5855ce-7d57-4321-bf1c-89de0ec21cf5|0
+      - 
+      flowUIDs:
+      - 559ca76a-b9f4-44a2-88ca-e141968cd798
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1000
+    - fullName: VRCSDKBaseVRCPlayerApi.__SetVoiceDistanceNear__SystemSingle__SystemVoid
+      uid: 559ca76a-b9f4-44a2-88ca-e141968cd798
+      position: {x: 612.5825, y: 324.04175}
+      nodeUIDs:
+      - 8d5855ce-7d57-4321-bf1c-89de0ec21cf5|0
+      - 
+      flowUIDs:
+      - f699ded3-7ff8-4c82-89bd-45524424b0e6
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+    - fullName: VRCSDKBaseVRCPlayerApi.__SetVoiceGain__SystemSingle__SystemVoid
+      uid: f699ded3-7ff8-4c82-89bd-45524424b0e6
+      position: {x: 649.5825, y: 501.04175}
+      nodeUIDs:
+      - 8d5855ce-7d57-4321-bf1c-89de0ec21cf5|0
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|15
+    - fullName: Event_OnPlayerTriggerExit
+      uid: 79168e62-3f18-4b32-bac3-3bc24ae2448d
+      position: {x: 906.81323, y: 214.70773}
+      nodeUIDs: []
+      flowUIDs:
+      - bc8a71ee-7834-45db-95b0-c14a7fbc20ea
+      nodeValues: []
+    - fullName: VRCSDKBaseVRCPlayerApi.__SetVoiceDistanceFar__SystemSingle__SystemVoid
+      uid: bc8a71ee-7834-45db-95b0-c14a7fbc20ea
+      position: {x: 1271.8132, y: 179.70773}
+      nodeUIDs:
+      - 79168e62-3f18-4b32-bac3-3bc24ae2448d|0
+      - 
+      flowUIDs:
+      - 70827dd9-35b4-4aa2-80e4-c63b93671075
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|25
+    - fullName: VRCSDKBaseVRCPlayerApi.__SetVoiceDistanceNear__SystemSingle__SystemVoid
+      uid: 70827dd9-35b4-4aa2-80e4-c63b93671075
+      position: {x: 1263.8132, y: 324.70773}
+      nodeUIDs:
+      - 79168e62-3f18-4b32-bac3-3bc24ae2448d|0
+      - 
+      flowUIDs:
+      - 3720a782-fe16-4144-ac44-52dd712c1be6
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+    - fullName: VRCSDKBaseVRCPlayerApi.__SetVoiceGain__SystemSingle__SystemVoid
+      uid: 3720a782-fe16-4144-ac44-52dd712c1be6
+      position: {x: 1300.8132, y: 501.70773}
+      nodeUIDs:
+      - 79168e62-3f18-4b32-bac3-3bc24ae2448d|0
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|15
+    updateOrder: 0
+  graphElementData:
+  - type: 2
+    uid: 267aa1e3-5ffb-493c-977d-d05b6d82d58e
+    jsonData: '{"uid":"267aa1e3-5ffb-493c-977d-d05b6d82d58e","layout":{"serializedVersion":"2","x":164.00001525878907,"y":121.0,"width":696.0,"height":536.0},"containedElements":["f699ded3-7ff8-4c82-89bd-45524424b0e6","559ca76a-b9f4-44a2-88ca-e141968cd798","a3a61cb5-e78c-4aa9-91bc-e71fbbc971fe","8d5855ce-7d57-4321-bf1c-89de0ec21cf5"],"title":"Trigger
+      Enter","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
+  - type: 2
+    uid: 1b9c1987-b5c6-4e82-a864-fdd625ea1d6f
+    jsonData: '{"uid":"1b9c1987-b5c6-4e82-a864-fdd625ea1d6f","layout":{"serializedVersion":"2","x":882.0000610351563,"y":122.99998474121094,"width":621.0,"height":535.0},"containedElements":["3720a782-fe16-4144-ac44-52dd712c1be6","70827dd9-35b4-4aa2-80e4-c63b93671075","bc8a71ee-7834-45db-95b0-c14a7fbc20ea","79168e62-3f18-4b32-bac3-3bc24ae2448d"],"title":"Trigger
+      Exit","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
+  version: 1.0.0
+  showAssembly: 0
