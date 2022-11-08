@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
   m_Name: Staff List Teleportation
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 81c943edfd4df0f4091c47657559e25e,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 1024f2b2105dcdb49996897f623ca8dc,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export PLayerList\r\n    .export TeleportPlayer\r\n   
     .export ToggleList\r\n    .export ActionToggle\r\n    .export IsGlobal\r\n   
