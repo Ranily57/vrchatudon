@@ -2,6 +2,7 @@
 #### Staff List Teleportation
 
 **ActionToggle:** Si coché, active le mode téléportation, si décocher, active le mode toggle list 
+
 **IsGlobal:** Si coché, synchronise le toggle avec tout les joueurs de la map
 
 #### Player Voice Amplification TriggerZone
