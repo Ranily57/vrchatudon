@@ -1,13 +1,3 @@
-Bonjour @Open Beta testeurs ! Nous avons une nouvelle version pour vous ! Il s'agit de VRChat 2023.2.2, build 1301.
-
-Cette version est compatible avec le réseau ! Vous pouvez l'utiliser avec Live !
-
-Cette Open Beta est désormais disponible sur les plateformes Steam et Oculus PC, mais pas sur Meta Quest en raison d'un problème de construction.
-
-Comme toujours, veuillez poster vos commentaires à l'adresse https://feedback.vrchat.com/open-beta.
-
-Consultez les journaux de modifications complets pour plus d'informations ! Il y a BEAUCOUP de choses dans cette version et le résumé ci-dessous ne contient PAS toutes les informations, car il y a un tas de documents à lier. 
-
 Veuillez lire les notes de patch complètes.
 
 https://docs.vrchat.com/v2023.2.2/docs/latest-release
