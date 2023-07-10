@@ -6,7 +6,7 @@ Le script `whitelist_toggle` permet de désactiver un GameObject spécifique pou
 
 1. **Installer UdonSharp**
 
-   Assurez-vous que vous avez installé UdonSharp dans votre projet Unity. Il est nécessaire pour compiler ce script. Vous pouvez l'obtenir à partir du [Asset Store de Unity](https://assetstore.unity.com/).
+   Assurez-vous que vous avez installé UdonSharp dans votre projet Unity. Il est nécessaire pour compiler ce script.
 
 2. **Télécharger le script**
 
