@@ -10,3 +10,5 @@
 Créer un GameObject avec un Box Collider en Trigger.
 
 Le UdonGraph utilise le GameObject sur lequel il est en tant que TriggerZone
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B3NGKMR)
